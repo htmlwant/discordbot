@@ -1,3 +1,4 @@
 {
-    "token" : "MTQ3NTA4MjE1NTE4ODAyNzU2NQ.Go4MLT.HhUGaMM3iqKkQD0n3BbHyPeyzLWnekPZBLR1O0"
+    "token" : process.env.DISCORD_TOKEN;
 }
+
