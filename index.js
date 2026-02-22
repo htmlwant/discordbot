@@ -14,7 +14,7 @@ const client = new Client({
 });
 
 // ================= [ 본인 서버 정보 입력 ] =================
-const TOKEN = 'MTQ3NTA4MjE1NTE4ODAyNzU2NQ.G8JSKQ.kW2FNS8vvz9pPL92swADUzCDasoxMJMYUgU4NA'; 
+const TOKEN = process.env.DISCORD_TOKEN; 
 const CATEGORY_ID = '1402345731427401821'; 
 const CREATE_CHANNEL_ID = '1475086771455787181'; 
 
@@ -96,5 +96,6 @@ client.on('voiceStateUpdate', async (oldState, newState) => {
         }
     }
 });
+
 
 client.login(TOKEN);
